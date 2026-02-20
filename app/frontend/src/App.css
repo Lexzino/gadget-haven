@@ -1,0 +1,251 @@
+"/* App-specific styles */
+
+/* Hero glow effect */
+.hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 59, 48, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Service card gradient borders */
+.service-card-border {
+  position: relative;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #FF3B30 0%, #FF6B5B 100%) border-box;
+  border: 2px solid transparent;
+}
+
+/* Product card image hover zoom */
+.product-card-image {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card-image {
+  transform: scale(1.05);
+}
+
+/* Floating animation for decorative elements */
+@keyframes floating {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.floating-element {
+  animation: floating 6s ease-in-out infinite;
+}
+
+.floating-element-delayed {
+  animation: floating 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* WhatsApp button pulse */
+.whatsapp-btn {
+  animation: pulse-whatsapp 2s infinite;
+}
+
+@keyframes pulse-whatsapp {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Header sticky shadow on scroll */
+.header-scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Form focus states */
+.form-input:focus {
+  outline: none;
+  border-color: #FF3B30;
+  box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.1);
+}
+
+/* Badge styles */
+.badge-verified {
+  background: linear-gradient(135deg, #00C853 0%, #00E676 100%);
+}
+
+.badge-uk-used {
+  background: linear-gradient(135deg, #2196F3 0%, #64B5F6 100%);
+}
+
+.badge-new {
+  background: linear-gradient(135deg, #FF3B30 0%, #FF6B5B 100%);
+}
+
+/* Section dividers */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #E5E5E5, transparent);
+}
+
+/* Testimonial card styles */
+.testimonial-card::before {
+  content: '\"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 80px;
+  color: #FF3B30;
+  opacity: 0.1;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1;
+}
+
+/* Loading spinner */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #E5E5E5;
+  border-top-color: #FF3B30;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tab active indicator */
+.tab-active {
+  position: relative;
+}
+
+.tab-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #FF3B30;
+  border-radius: 1px;
+}
+
+/* Repair issue icon styles */
+.repair-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F7;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.repair-card:hover .repair-icon {
+  background: #FF3B30;
+  color: white;
+}
+
+/* How it works connector line */
+.step-connector {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #FF3B30, #E5E5E5);
+}
+
+/* Map placeholder styles */
+.map-placeholder {
+  background: 
+    linear-gradient(135deg, #F5F5F7 25%, transparent 25%),
+    linear-gradient(225deg, #F5F5F7 25%, transparent 25%),
+    linear-gradient(45deg, #F5F5F7 25%, transparent 25%),
+    linear-gradient(315deg, #F5F5F7 25%, #E5E5E5 25%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked {
+  background: #FF3B30;
+  border-color: #FF3B30;
+  background-image: url(\"data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m13.06 5.06-6 6a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06L6.5 9.44l5.47-5.47a.75.75 0 1 1 1.06 1.06Z'/%3e%3c/svg%3e\");
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer styles */
+.footer-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #FF3B30;
+  transition: width 0.2s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+/* Social icon hover */
+.social-icon {
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  color: #FF3B30;
+}
+"

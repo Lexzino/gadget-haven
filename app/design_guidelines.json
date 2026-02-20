@@ -1,0 +1,167 @@
+{
+  "project_name": "Gadget Haven (Gadgethaven)",
+  "version": "1.0",
+  "last_updated": "2026-05-20",
+  "design_philosophy": {
+    "identity": "E1: The Anti-AI Designer",
+    "core_concept": "The Hyper-Clean Tech Vault",
+    "vibe": "Trusted, Kinetic, Sharp, Authentic.",
+    "emotional_goal": "A feeling of 'Newness' and 'Precision'. Every pixel must feel like unboxing a fresh Apple product."
+  },
+  "typography": {
+    "font_family_heading": "Outfit, sans-serif",
+    "font_family_body": "Plus Jakarta Sans, sans-serif",
+    "heading_weights": [
+      "500",
+      "700",
+      "800"
+    ],
+    "body_weights": [
+      "400",
+      "500",
+      "600"
+    ],
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[0.9]",
+      "h2": "text-4xl md:text-6xl font-bold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold tracking-normal",
+      "body_large": "text-lg md:text-xl font-medium leading-relaxed",
+      "body_base": "text-base font-normal leading-relaxed text-gray-600",
+      "caption": "text-xs font-bold uppercase tracking-widest text-red-600"
+    },
+    "installation": "Import 'Outfit' and 'Plus Jakarta Sans' from Google Fonts in index.css"
+  },
+  "colors": {
+    "mode": "light",
+    "palette": {
+      "background": {
+        "default": "#FFFFFF",
+        "subtle": "#F5F5F7",
+        "overlay": "rgba(255, 255, 255, 0.85)"
+      },
+      "foreground": {
+        "default": "#111111",
+        "muted": "#666666",
+        "inverse": "#FFFFFF"
+      },
+      "primary": {
+        "main": "#FF3B30",
+        "hover": "#D72F26",
+        "foreground": "#FFFFFF",
+        "description": "Electric Red - Use for Buy Buttons, Alerts, and Urgent CTAs."
+      },
+      "secondary": {
+        "main": "#000000",
+        "foreground": "#FFFFFF"
+      },
+      "border": {
+        "default": "#E5E5E5",
+        "focus": "#111111"
+      }
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at 50% 50%, rgba(255, 59, 48, 0.15) 0%, rgba(255, 255, 255, 0) 70%)",
+      "glass": "linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%)"
+    }
+  },
+  "layout_grid": {
+    "container": "max-w-[1440px] mx-auto px-4 md:px-8",
+    "modes": {
+      "hero": "grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 h-auto md:h-[90vh]",
+      "bento_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[300px]",
+      "product_list": "grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-12"
+    },
+    "spacing": {
+      "section_y": "py-24 md:py-32",
+      "element_gap": "gap-8"
+    }
+  },
+  "components": {
+    "radius": "rounded-2xl",
+    "shadows": {
+      "card": "0 2px 8px -2px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)",
+      "hover": "0 20px 40px -12px rgba(0,0,0,0.12)",
+      "float": "0 8px 30px rgba(0,0,0,0.12)"
+    },
+    "buttons": {
+      "primary": "bg-[#FF3B30] hover:bg-[#D72F26] text-white rounded-full px-8 py-4 font-bold text-sm tracking-wide transition-transform active:scale-95",
+      "secondary": "bg-black text-white rounded-full px-8 py-4 font-bold hover:bg-gray-800",
+      "outline": "border-2 border-gray-200 hover:border-black bg-transparent text-black rounded-full px-8 py-4 font-bold transition-colors"
+    },
+    "cards": {
+      "glass": "bg-white/80 backdrop-blur-xl border border-white/20 shadow-sm",
+      "solid": "bg-gray-50 border border-transparent hover:border-gray-200 transition-all duration-300"
+    }
+  },
+  "images": {
+    "rules": [
+      "Use 'object-cover' for all backgrounds.",
+      "Product images must have generous whitespace.",
+      "People must look authentic/candid, not corporate stock.",
+      "Add a subtle noise texture overlay (opacity 5%) to images to kill digital gloss."
+    ],
+    "assets": {
+      "hero_bg": "https://images.unsplash.com/photo-1735448213858-6bdfdf78967a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBnYWRnZXQlMjBzdG9yZSUyMGludGVyaW9yJTIwd2hpdGUlMjBicmlnaHR8ZW58MHx8fHwxNzcxNTc4ODk0fDA&ixlib=rb-4.1.0&q=85",
+      "product_iphone": "https://images.unsplash.com/photo-1695822958645-b2b058159215?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNSUyMHBybyUyMG1heCUyMHRpdGFuaXVtJTIwbmF0dXJhbHxlbnwwfHx8fDE3NzE1Nzg4OTV8MA&ixlib=rb-4.1.0&q=85",
+      "product_macbook": "https://images.pexels.com/photos/5083412/pexels-photo-5083412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "service_repair": "https://images.unsplash.com/photo-1576613109753-27804de2cba8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHw0fHxwaG9uZSUyMHJlcGFpciUyMHRlY2huaWNpYW4lMjBmaXhpbmclMjBzbWFydHBob25lJTIwc2NyZWVufGVufDB8fHx8MTc3MTU3ODg5Nnww&ixlib=rb-4.1.0&q=85",
+      "service_swap": "https://images.unsplash.com/photo-1622556498246-755f44ca76f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGFmcmljYW4lMjBhbWVyaWNhbiUyMG1hbiUyMGhvbGRpbmclMjBuZXclMjBzbWFydHBob25lfGVufDB8fHx8MTc3MTU3ODg5N3ww&ixlib=rb-4.1.0&q=85",
+      "context_broken": "https://images.unsplash.com/photo-1731391747600-4d0f478b2184?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ6MzR8MHwxfHNlYXJjaHwyfHxicm9rZW4lMjBzbWFydHBob25lJTIwc2NyZWVuJTIwY3JhY2tlZHxlbnwwfHx8fDE3NzE1Nzg4OTh8MA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "scroll": "lenis",
+    "animations": {
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 20 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "viewport": { "once": true },
+        "transition": { "duration": 0.5, "ease": "easeOut" }
+      },
+      "stagger_container": {
+        "initial": "hidden",
+        "animate": "show",
+        "variants": {
+          "hidden": { "opacity": 0 },
+          "show": { "opacity": 1, "transition": { "staggerChildren": 0.1 } }
+        }
+      },
+      "hover_card": {
+        "whileHover": { "y": -5, "transition": { "duration": 0.2 } }
+      }
+    }
+  },
+  "accessibility": {
+    "rules": [
+      "Ensure Red (#FF3B30) is only used on White/Light backgrounds for text, or use White text on Red background.",
+      "Interactive elements must have min-width 44px for mobile.",
+      "All images must have alt text describing the gadget or emotion.",
+      "Use 'outline-offset-2' for focus states."
+    ]
+  },
+  "page_specifics": {
+    "home": {
+      "hero_strategy": "Split screen or Heavy Asymmetry. Left: Massive 'WE FIX IT' or 'UPGRADE NOW' type. Right: Floating 3D-style product shot (use Parallax).",
+      "sections": ["Hero", "Trust Indicators (Logos)", "Bento Grid Services", "Featured Products (Carousel)", "Testimonials", "FAQ", "Footer"]
+    },
+    "shop": {
+      "grid_style": "Clean, minimal cards. Image dominant. Price and Title below in bold."
+    },
+    "repair": {
+      "form_style": "Multi-step wizard feel. Big clickable icons for 'Screen', 'Battery', 'Water Damage'."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react' for icons.",
+    "Install 'framer-motion' and '@studio-freight/lenis' for smooth feel.",
+    "Use 'Outfit' font for all headings. It is CRITICAL for the tech look.",
+    "Do not use generic gray backgrounds. Use subtle off-whites (#FAFAFA) to distinguish sections.",
+    "The 'Red' accent is your power color. Use it sparingly but boldly (Buttons, Price tags, Sale badges).",
+    "Mobile navigation must be a bottom bar or a full-screen overlay menu.",
+    "Create a 'data-testid' for every interactive element.",
+    "Theme: FORCE LIGHT MODE. Dark mode only for footer or specific high-contrast sections.",
+    "For the 'UK Used Phones' section, use a 'Verified' badge metaphor to build trust."
+  ]
+}
+
